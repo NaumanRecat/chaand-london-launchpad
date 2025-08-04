@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Chaand London Design System - Celestial Luxury Theme
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Celestial color palette */
+    --background: 220 25% 6%;
+    --foreground: 220 15% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 20% 10%;
+    --card-foreground: 220 15% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 220 15% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 45 90% 70%;
+    --primary-foreground: 220 25% 6%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 220 15% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 90% 70%;
+    --accent-foreground: 220 25% 6%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 45 90% 70%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom design tokens for Chaand London */
+    --lunar-gold: 45 90% 70%;
+    --lunar-gold-soft: 45 60% 85%;
+    --midnight-blue: 220 25% 6%;
+    --deep-space: 220 30% 3%;
+    --stellar-silver: 220 10% 80%;
+    --cosmic-purple: 250 40% 25%;
+    
+    /* Gradients */
+    --gradient-celestial: linear-gradient(135deg, hsl(220 25% 6%) 0%, hsl(250 40% 25%) 50%, hsl(220 25% 6%) 100%);
+    --gradient-moonrise: linear-gradient(to top, hsl(220 25% 6%), hsl(220 20% 12%), hsl(250 40% 25%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 90% 70%), hsl(45 80% 75%));
+    
+    /* Shadows and effects */
+    --shadow-lunar: 0 20px 50px -12px hsl(45 90% 70% / 0.25);
+    --shadow-deep: 0 25px 50px -12px hsl(220 25% 6% / 0.8);
+    --glow-gold: 0 0 30px hsl(45 90% 70% / 0.4);
+    
+    /* Animation timings */
+    --transition-celestial: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
